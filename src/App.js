@@ -2,9 +2,10 @@ import { useState } from "react";
 import "./styles.css";
 
 function Button1(props){
+const btn = () => props.adding_value1(props.incrementvalue1) ;
   return(
   <div>
-  <button onClick={() => props.adding_value1(props.incrementvalue1) }>100+</button>
+  <button onClick={btn}>100+</button>
   <span>{props.newvalue1}</span>
   </div>
   );
